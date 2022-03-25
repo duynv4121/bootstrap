@@ -1,0 +1,32 @@
+.container-layout-full {
+    max-width: 1480px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container-layout-min {
+    max-width: 1120px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.brand {
+    font-family: 'Cormorant Garamond', sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    color: #000;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.brand-link {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: #000;
+}
+
+.content-main p,
+.content-left p {
+    font-family: 'Cormorant Garamond', sans-serif;
+}
