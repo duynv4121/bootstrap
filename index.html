@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Mulish:wght@200;300;400&family=Playfair+Display:wght@400;500;600;800;900&display=swap" rel="stylesheet">
@@ -14,22 +16,38 @@
 </head>
 
 <body>
-    <div class="container-layout-full d-flex justify-content-between align-self-center header">
-        <div class="header-logo">
-            <a class="flex-grow-1 bd-highlight brand">
-                ANOUSKA'S
-            </a>
-        </div>
-        <div class="header-link d-flex">
-            <a class="p-2 bd-highlight brand-link align-self-center">Beverage</a>
-            <a class="p-2 bd-highlight brand-link align-self-center">Food</a>
+    <div class="fixed-top sticky-menu">
+        <div class="container-layout-full d-flex justify-content-between align-self-center header">
+            <div class="header-logo">
+                <a class="flex-grow-1 bd-highlight brand">
+                    ANOUSKA'S
+                </a>
+                <img class="brand-responsive" src="https://anouskas.sg/wp-content/uploads/elementor/thumbs/anouskas-bw-ozlfweufl7qqkw2e74j5pvdr8drglf1ob2dkib2vpc.png" alt="">
+            </div>
+            <div class="header-link">
+                <div class="d-flex">
+                    <a href="./coming-soon.pdf" class="p-2 bd-highlight brand-link align-self-center">Beverage</a>
+                    <a href="./contact.pdf" class="p-2 bd-highlight brand-link align-self-center">Food</a>
+                </div>
+            </div>
+            <div class="header-link-icon">
+                <i onclick="handelShowMenu(this)" class="menu-icon fa-solid fa-bars "></i>
+            </div>
         </div>
     </div>
 
-    <div class="d-flex h-100 justify-content-center align-items-center row pt-5 pb-5">
-        <div class="container-layout-min d-flex w-100 image-section2 no-gutters">
-            <img class="col-6" src="https://anouskas.sg/wp-content/uploads/2020/12/Anouska-Hempel-Cropped.png" alt="">
-            <img class="col-6" src="https://anouskas.sg/wp-content/uploads/2020/11/bar-cropped-scaled.jpg" alt="">
+    <div style="display:none;" class="menu-responsive fixed-top">
+        <a href="./coming-soon.pdf" class="p-2 d-block bd-highlight brand-link align-self-center">Beverage</a>
+        <a href="./contact.pdf" class="p-2 d-block bd-highlight brand-link align-self-center">Food</a>
+    </div>
+
+
+    <div class="d-flex h-100 container-layout-min justify-content-center align-items-center image-header">
+        <div class="d-flex row image-section2">
+            <div class="no-gutters row col col-12">
+                <img class="d-block col-md-6 col-12" src="https://anouskas.sg/wp-content/uploads/2020/12/Anouska-Hempel-Cropped.png" alt="">
+                <img class="d-block col-md-6 col-12" src="https://anouskas.sg/wp-content/uploads/2020/11/bar-cropped-scaled.jpg" alt="">
+            </div>
         </div>
     </div>
 
@@ -39,80 +57,91 @@
                 top – shelf spirits, premium wines, local craft beers, artisanal Chinese teas and cocktails expertly injected with nostalgic Eastern influences — well suited to city dwellers looking for an urban escape.
             </p>
         </div>
-        <div class="col d-flex">
-            <div class="col-7 p-0 content-left">
+        <div class="col-12 row content-main-img">
+            <div class="col-md-7 col-12 content-left">
                 <p>The savant of the visual, Anouska Hempel is revered across the world for her originality and for her influence. This is a designer who sees everything, and instinctively understands it. Wherever the trade routes have passed or the trade
                     winds have blown – that’s her territory and at once you are thrown into a throng of creativity that is impelled to take every realm of design to more thrilling and higher heights. There is mystery, romance, theatre and perfection;
                     an utopian whirl of stories to be told and worlds to unfold. The stuff of dreams, a glimpse of beyond – from dignitary to vagabond – a corner for every inch of thought alongside beauty, delight and charm.
                 </p>
             </div>
-            <div class="col-5">
+            <div class="col-md-5 col-12">
                 <img class="w-100" src="https://anouskas.sg/wp-content/uploads/2020/11/1543195746160.jpg" alt="">
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="signature col-12 py-5">
-            <div class="signature-title">
-                <h2 class="text-center">SIGNATURE COCKTAILS AT ANOUSKA'S</h2>
+
+    <div class="signature py-5">
+        <div class="signature-title col">
+            <h2 class="text-center">SIGNATURE COCKTAILS AT ANOUSKA'S</h2>
+        </div>
+
+
+        <div class="signature-block-item row col col-12" data-aos="fade-left" data-aos-duration="1000">
+            <div class="signature-item col-md-4 col-6">
+                <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/11/Anouskas-Hong-Long-Choc-225x300.jpg" alt="">
+                <p class="signature-item-title text-center">HONG LONG CHOC</p>
+            </div>
+            <div class="signature-item col-md-4 col-6">
+                <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/11/Anouskas-Escape-to-Kaifeng-225x300.jpg" alt="">
+                <p class="signature-item-title text-center">ESCAPE TO KAIFENG</p>
             </div>
 
-            <div class="signature-block-item d-flex">
-                <div class="signature-item col-4 ">
-                    <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/11/Anouskas-Hong-Long-Choc-225x300.jpg" alt="">
-                    <p class="signature-item-title text-center">HONG LONG CHOC</p>
-                </div>
-                <div class="signature-item col-4">
-                    <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/11/Anouskas-Escape-to-Kaifeng-225x300.jpg" alt="">
-                    <p class="signature-item-title text-center">ESCAPE TO KAIFENG</p>
-                </div>
-
-                <div class="signature-item col-4">
-                    <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/11/Anouskas-Canton-Sour-225x300.jpg" alt="">
-                    <p class="signature-item-title text-center">CANTON SOUR</p>
-                </div>
-            </div>
-            <div class="container-layout-min">
-                <div class="col col-12 content-main">
-                    <p>Inspired by the flower of Kaifeng city, the bar’s trademark cocktail <b>ESCAPE TO KAIFENG</b> infuses house-made chrysanthemum cordial with Tanqueray London dry gin for a delicately floral aperitif. Its non-alcoholic counterpart, <b>THE
-                        KAIFENG,</b> one of four natural tonics the bar offers, replaces gin with artesanal sparkling water.
-                    </p>
-                </div>
-                <div class="col col-12 content-main">
-                    <p><b>CHEN PI COLLINS</b> is an East-meets-West spin on the timeless Tom Collins with Mandarin-infused gin and a sprightly citrus fizz; while the <b> CANTON SOUR</b> is a fragrant blend of whisky and Luxardo amaretto, subtly sweet and
-                        sour with a nutty aroma and a dash of Angostura bitters with sprinkling of toasted black sesame seeds. Chocolate lovers can satiate their cacao cravings with <b>HONG LONG CHOC,</b> a seductive swirl of whisky, chocolate liqueur,
-                        aromatic bitters and Lapsang Souchong, a distinctive pinewood smoke-dried black tea native to the Wuyi region of China’s Fujian province.
-                    </p>
-                </div>
-                <div class="col col-12 content-main">
-                    <p><b>ON HER MAJESTY’S SECRET SERVICE</b> is a playful tribute to designer Anouska Hempel — a former Bond Girl from the 1969 namesake film—in the form of a dry gin martini tipped with yuzu and green tea bitters. Fans of the iconic martini
-                        can also try three unique variations of the Bond-approved classic with <b>MARTINI TRIAD,</b> a tasting flight of the bar’s signature martinis — including a dirty martini clouded with house-made pickled green chilli and brine.
-                    </p>
-                </div>
-            </div>
-
-            <div class="signature-block-item d-flex">
-                <div class="signature-item col-4 ">
-                    <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/11/Anouskas-Martini-Triad-225x300.jpg" alt="">
-                    <p class="signature-item-title text-center"> MARTINI TRIAD</p>
-                </div>
-                <div class="signature-item col-4">
-                    <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/12/anouskas-action-shot-Cropped-225x300.jpg" alt="">
-                    <p class="signature-item-title text-center">CHEN PI COLLINS</p>
-                </div>
-
-                <div class="signature-item col-4">
-                    <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/11/Anouskas-Tonics-225x300.jpg" alt="">
-                    <p class="signature-item-title text-center">THE KAIFENG</p>
-                </div>
+            <div class="signature-item col-md-4 col-6">
+                <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/11/Anouskas-Canton-Sour-225x300.jpg" alt="">
+                <p class="signature-item-title text-center">CANTON SOUR</p>
             </div>
         </div>
-    </div>
 
-    <div class="row">
+
+
         <div class="container-layout-min">
-            <div class="dinner">
+            <div class="col content-main">
+                <p>Inspired by the flower of Kaifeng city, the bar’s trademark cocktail <b>ESCAPE TO KAIFENG</b> infuses house-made chrysanthemum cordial with Tanqueray London dry gin for a delicately floral aperitif. Its non-alcoholic counterpart, <b>THE
+                        KAIFENG,</b> one of four natural tonics the bar offers, replaces gin with artesanal sparkling water.
+                </p>
+            </div>
+            <div class="col content-main">
+                <p><b>CHEN PI COLLINS</b> is an East-meets-West spin on the timeless Tom Collins with Mandarin-infused gin and a sprightly citrus fizz; while the <b> CANTON SOUR</b> is a fragrant blend of whisky and Luxardo amaretto, subtly sweet and sour
+                    with a nutty aroma and a dash of Angostura bitters with sprinkling of toasted black sesame seeds. Chocolate lovers can satiate their cacao cravings with <b>HONG LONG CHOC,</b> a seductive swirl of whisky, chocolate liqueur, aromatic
+                    bitters and Lapsang Souchong, a distinctive pinewood smoke-dried black tea native to the Wuyi region of China’s Fujian province.
+                </p>
+            </div>
+            <div class="col content-main">
+                <p><b>ON HER MAJESTY’S SECRET SERVICE</b> is a playful tribute to designer Anouska Hempel — a former Bond Girl from the 1969 namesake film—in the form of a dry gin martini tipped with yuzu and green tea bitters. Fans of the iconic martini
+                    can also try three unique variations of the Bond-approved classic with <b>MARTINI TRIAD,</b> a tasting flight of the bar’s signature martinis — including a dirty martini clouded with house-made pickled green chilli and brine.
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="signature-block-item row col-12" data-aos="fade-left" data-aos-duration="1000">
+            <div class="signature-item col-md-4 col-6">
+                <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/11/Anouskas-Martini-Triad-225x300.jpg" alt="">
+                <p class="signature-item-title text-center"> MARTINI TRIAD</p>
+            </div>
+            <div class="signature-item col-md-4 col-6">
+                <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/12/anouskas-action-shot-Cropped-225x300.jpg" alt="">
+                <p class="signature-item-title text-center">CHEN PI COLLINS</p>
+            </div>
+
+            <div class="signature-item col-md-4 col-6">
+                <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2020/11/Anouskas-Tonics-225x300.jpg" alt="">
+                <p class="signature-item-title text-center">THE KAIFENG</p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="container-layout-min">
+            <div class="dinner col-12">
                 <h3 class="text-center">
                     DINING AT ANOUSKA'S
                 </h3>
@@ -124,12 +153,12 @@
                 </p>
             </div>
         </div>
-    </div>
 
 
-    <div class="row">
+
+
         <div class="container-layout-min">
-            <div class="ladies-night">
+            <div class="ladies-night col-12">
                 <h3 class="text-center">
                     LADIES NIGHT AT ANOUSKA'S
                 </h3>
@@ -140,66 +169,80 @@
                 </p>
             </div>
         </div>
-    </div>
 
 
-    <div class="container-layout-min">
-        <div class="signature-block-item d-flex">
-            <div class="signature-item col-4 ">
-                <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2021/05/B1478C86-8251-42FF-AE5F-3B1B226ED23E-240x300.jpeg" alt="">
-            </div>
-            <div class="signature-item col-4">
-                <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2021/05/3B933299-88F2-44C3-855B-1ECA3BEB8008-240x300.jpeg" alt="">
-            </div>
 
-            <div class="signature-item col-4">
-                <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2021/05/E0B1DB69-5AF9-44C8-A8A3-DF4282038667-240x300.jpeg" alt="">
-            </div>
-        </div>
-    </div>
-
-
-    <h3 class="text-center px-5">
-        BEVERAGE MENU
-    </h3>
-
-
-    <h3 class="text-center px-5">
-        FOOD MENU
-    </h3>
-
-
-    <div class="container-layout-min py-5">
-        <div class="signature-block-item d-flex">
-            <div class="signature-item col-4 ">
-                <h4 class="text-center font-weight-bold">LOCATION</h4>
-                <p class="text-center">83 Duxton Road Singapore 089540</p>
-            </div>
-            <div class="signature-item col-4">
-                <h4 class="text-center font-weight-bold">CONTACT</h4>
-                <ul class="d-block mx-auto p-0">
-                    <li class="text-center">Phone: +65 6914 1428</li>
-                    <li class="text-center">WhatsApp: +65 9859 1643</li>
-                    <li class="text-center">Email: reservations@anouskas.sg</li>
-                </ul>
-                <div class="social-icon">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
+        <div class="container-layout-min">
+            <div class="signature-block-item no-gutters col col-12 row">
+                <div class="signature-item col-md-4 col-6">
+                    <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2021/05/B1478C86-8251-42FF-AE5F-3B1B226ED23E-240x300.jpeg" alt="">
+                </div>
+                <div class="signature-item col-md-4 col-6">
+                    <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2021/05/3B933299-88F2-44C3-855B-1ECA3BEB8008-240x300.jpeg" alt="">
+                </div>
+                <div class="signature-item col-md-4 col-6">
+                    <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2021/05/E0B1DB69-5AF9-44C8-A8A3-DF4282038667-240x300.jpeg" alt="">
                 </div>
             </div>
-            <div class="signature-item col-4">
-                <h4 class="text-center font-weight-bold">HOURS</h4>
-                <p class="text-center p-0">Monday – Sunday: 12pm to 10.30pm</p>
-                <p class="text-center p-0">Kindly note that food will not be served from 3 to 5pm</p>
+        </div>
+
+
+        <h3 class="text-center px-5 beverage-menu">
+            BEVERAGE MENU
+        </h3>
+
+
+        <h3 class="text-center px-5">
+            FOOD MENU
+        </h3>
+
+
+        <div class="container-layout-min pt-5">
+            <div class="signature-block-item row d-flex">
+                <div class="signature-item col-md-4 col-12">
+                    <h4 class="text-center font-weight-bold">LOCATION</h4>
+                    <p class="text-center">83 Duxton Road Singapore 089540</p>
+                </div>
+                <div class="signature-item col-md-4 col-12">
+                    <h4 class="text-center font-weight-bold">CONTACT</h4>
+                    <ul class="d-block mx-auto p-0">
+                        <li class="text-center">Phone: +65 6914 1428</li>
+                        <li class="text-center">WhatsApp: +65 9859 1643</li>
+                        <li class="text-center">Email: reservations@anouskas.sg</li>
+                    </ul>
+                    <div class="social-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="signature-item col-md-4 col-12">
+                    <h4 class="text-center font-weight-bold">HOURS</h4>
+                    <p class="text-center p-0">Monday – Sunday: 12pm to 10.30pm</p>
+                    <p class="text-center p-0">Kindly note that food will not be served from 3 to 5pm</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="copy-right pt-5">
-        <p class="text-center">Copyright © 2022 Anouska's | Designed by Webdorks</p>
-    </div>
-
+        <div class="copy-right">
+            <p class="text-center">Copyright © 2022 Anouska's | Designed by Webdorks</p>
+        </div>
 
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script>
+    function handelShowMenu(icon) {
+        icon.classList.toggle('fa-xmark');
+        var menu = document.querySelector(".menu-responsive");
+        if (menu.style.display === "none") {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    }
+</script>
 
 </html>

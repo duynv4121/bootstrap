@@ -1,5 +1,10 @@
 * {
     font-family: 'Cormorant Garamond', sans-serif;
+    overflow-x: hidden;
+}
+
+.row {
+    padding: 0;
 }
 
 .container-layout-full {
@@ -9,9 +14,34 @@
 }
 
 .container-layout-min {
-    max-width: 1120px;
+    max-width: 1184px;
     margin: 0 auto;
     width: 100%;
+}
+
+.header {
+    min-height: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sticky-menu {
+    background-color: #fff;
+}
+
+.header-link-icon {
+    display: none;
+    font-size: 25px;
+}
+
+.image-header {
+    padding: 150px 0;
+}
+
+.brand-responsive {
+    display: none;
 }
 
 .brand {
@@ -22,10 +52,22 @@
     font-size: 35px;
 }
 
+.brand:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
 .brand-link {
     font-size: 17px;
     font-weight: 600;
     color: #000;
+}
+
+.brand-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #7a7a7a;
 }
 
 .content-main p,
@@ -43,8 +85,50 @@
 
 h3 {
     font-weight: 700 !important;
+    padding: 15px 0;
+    font-size: 28px !important;
+}
+
+.beverage-menu {
+    margin-top: 100px;
 }
 
 ul li {
     list-style: none;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 70px 0;
+}
+
+.social-icon i {
+    font-size: 21px;
+}
+
+.copy-right p {
+    color: #7a7a7a;
+}
+
+.menu-responsive {
+    margin-top: 60px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.header-link-icon:hover {
+    cursor: pointer;
+}
+
+.menu-responsive a {
+    border-bottom: 1px solid#ccc;
+}
+
+.menu-responsive a:hover {
+    text-decoration: none;
+    color: #7a7a7a;
+    cursor: pointer;
 }
