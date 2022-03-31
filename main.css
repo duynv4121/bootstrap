@@ -13,6 +13,12 @@
     width: 100%;
 }
 
+.width-full {
+    max-width: 1900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .container-layout-min {
     max-width: 1184px;
     margin: 0 auto;
@@ -29,6 +35,7 @@
 
 .sticky-menu {
     background-color: #fff;
+    padding: 0 6%;
 }
 
 .header-link-icon {
