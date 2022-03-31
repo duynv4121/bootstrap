@@ -134,6 +134,10 @@ ul li {
     cursor: pointer;
 }
 
+.copy-right p {
+    margin-bottom: 0;
+}
+
 .book-now {
     background-color: #000;
 }
