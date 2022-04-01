@@ -170,7 +170,7 @@
 
 
         <div class="container-layout-min">
-            <div class="signature-block-item no-gutters col col-12 row">
+            <div class="signature-block-item no-gutters col row col-12">
                 <div class="signature-item col-md-4 col-6">
                     <img class="d-block mx-auto" src="https://anouskas.sg/wp-content/uploads/2021/05/B1478C86-8251-42FF-AE5F-3B1B226ED23E-240x300.jpeg" alt="">
                 </div>
@@ -184,7 +184,7 @@
         </div>
     </div>
 
-    <h3 class="text-center px-5 beverage-menu">
+    <h3 class="text-center px-3 beverage-menu">
         BEVERAGE MENU
     </h3>
 
@@ -197,11 +197,14 @@
     <div class="container-layout-min pt-5">
         <div class="signature-block-item row d-flex">
             <div class="signature-item col-md-4 col-12">
-                <h4 class="text-center font-weight-bold">LOCATION</h4>
-                <p class="text-center">83 Duxton Road Singapore 089540</p>
+                <h4 class="text-center font-weight-bold pb-2">LOCATION</h4>
+                <ul class="d-block mx-auto p-0">
+                    <li class="text-center">83 Duxton Road</li>
+                    <li class="text-center"> Singapore 089540</li>
+                </ul>
             </div>
             <div class="signature-item col-md-4 col-12">
-                <h4 class="text-center font-weight-bold">CONTACT</h4>
+                <h4 class="text-center font-weight-bold pb-2">CONTACT</h4>
                 <ul class="d-block mx-auto p-0">
                     <li class="text-center">Phone: +65 6914 1428</li>
                     <li class="text-center">WhatsApp: +65 9859 1643</li>
@@ -213,9 +216,11 @@
                 </div>
             </div>
             <div class="signature-item col-md-4 col-12">
-                <h4 class="text-center font-weight-bold">HOURS</h4>
-                <p class="text-center p-0">Monday – Sunday: 12pm to 10.30pm</p>
-                <p class="text-center p-0">Kindly note that food will not be served from 3 to 5pm</p>
+                <h4 class="text-center font-weight-bold pb-2">HOURS</h4>
+                <ul class="d-block mx-auto p-0">
+                    <li class="text-center">Monday – Sunday: 12pm to 10.30pm</li>
+                    <li class="text-center">Kindly note that food will not be served from 3 to 5pm</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -237,7 +242,7 @@
 <script>
     function handelShowMenu(icon) {
         icon.classList.toggle('fa-xmark');
-        var menu = document.querySelector(".menu-responsive");
+        let menu = document.querySelector(".menu-responsive");
         if (menu.style.display === "none") {
             menu.style.display = "block";
         } else {
