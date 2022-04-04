@@ -50,6 +50,11 @@
     /* padding: 0 4%; */
 }
 
+.header-link {
+    padding-top: 13px;
+    padding-right: 17px;
+}
+
 .header-link-icon {
     display: none;
     font-size: 25px;
@@ -115,7 +120,7 @@
 
 h3 {
     font-weight: 900 !important;
-    padding: 15px 0;
+    padding: 6px 0 24px;
     font-size: 28.8px !important;
 }
 
@@ -131,8 +136,8 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
-    margin: 60px 0;
+    gap: 22px;
+    margin: 50px 0 70px;
 }
 
 .social-icon i {
