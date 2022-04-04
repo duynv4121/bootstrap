@@ -1,124 +1,164 @@
-@media screen and (max-width: 1280px) {
-    .sticky-menu {
-        right: 0 !important;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .image-header {
-        padding: 100px 0 !important;
-    }
-    .sticky-menu {
-        padding: 0 20px;
-    }
-    .header {
-        padding-top: 0px !important;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .header {
-        padding: 10px 10px !important;
-    }
-    .header-link {
-        display: none;
-        padding: 0 20px !important;
-    }
-    .header-link-icon {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-    }
-    .image-header {
-        padding: 80px 0 !important;
-    }
-    .sticky-menu {
-        right: 0!important;
-    }
-    .brand {
-        display: none;
-    }
-    .brand-responsive {
-        display: block !important;
-        /* width: 120px; */
-    }
-    .image-header {
-        margin-bottom: 100px;
-    }
-    .content-main-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
-    .copy-right {
-        margin-top: 50px;
-    }
-    h4 {
-        font-size: 22.4px;
-    }
-    .menu-responsive {
-        /* display: block !important; */
-        position: absolute;
-        z-index: 100000;
-        right: 0;
-        left: 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .image-header {
-        padding: 100px 0 !important;
-    }
-    .sticky-menu {
-        padding: 0 15px;
-    }
-    .header {
-        padding: 10px 27px !important;
-        height: 80px;
-    }
-    .image-header {
-        padding: 50px 0 !important;
-    }
-    .image-header-block {
-        margin-top: -50px;
-    }
-    .brand-responsive {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 478px) {
-    .header {
-        max-height: 50px;
-    }
-    .image-header {
-        padding: 50px 0 !important;
-    }
-    .brand-responsive {
-        width: 50%;
-    }
-    .header {
-        padding: 0px 5px 10px 5px !important;
-    }
-    .image-header-item {
-        object-fit: cover;
-    }
-    .image-header-block {
-        margin-top: -50px;
-    }
-    .signature-block-item {
-        display: flex !important;
-        flex-direction: column !important;
-    }
-    .signature-item {
-        margin: 0 auto;
-    }
-    .col-6 {
-        max-width: 60% !important;
-    }
-    .signature-block-item {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-}
+                    @media screen and (max-width: 1280px) {
+                        .sticky-menu {
+                            right: 0 !important;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 1280px) {
+                        .image-header {
+                            padding: 100px 0 !important;
+                        }
+                        .sticky-menu {
+                            padding: 0 20px;
+                        }
+                        .header {
+                            padding-top: 0px !important;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 1024px) {
+                        .pd1rem {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                        .pd15rem {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                        .header {
+                            padding: 10px 10px !important;
+                        }
+                        .header-link {
+                            display: none;
+                            padding: 0 20px !important;
+                        }
+                        .header-link-icon {
+                            display: flex !important;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .image-header {
+                            padding: 73px 0 !important;
+                        }
+                        .sticky-menu {
+                            right: 0!important;
+                            padding: 0 48px;
+                        }
+                        .brand {
+                            display: none;
+                        }
+                        .brand-responsive {
+                            display: block !important;
+                            /* width: 120px; */
+                        }
+                        .image-header {
+                            margin-bottom: 100px;
+                        }
+                        .content-main-img {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 50px;
+                        }
+                        .copy-right {
+                            margin-top: 50px;
+                        }
+                        h4 {
+                            font-size: 22.4px;
+                        }
+                        .menu-responsive {
+                            /* display: block !important; */
+                            position: fixed;
+                            z-index: 100000;
+                            right: 0;
+                            left: 0;
+                        }
+                        .menu-icon {
+                            font-size: 22px;
+                            padding-top: 8px;
+                            color: #494c4f;
+                        }
+                        .pdlr {
+                            padding-left: 0 !important;
+                            padding-right: 0 !important;
+                        }
+                        .copy-right {
+                            margin-top: 0px;
+                        }
+                        .copy-right p {
+                            font-size: 15px !important;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 768px) {
+                        .image-header {
+                            padding: 100px 0 !important;
+                        }
+                        .sticky-menu {
+                            padding: 0 15px;
+                        }
+                        .header {
+                            padding: 10px 27px !important;
+                            height: 80px;
+                        }
+                        .image-header {
+                            padding: 50px 0 !important;
+                        }
+                        .image-header-block {
+                            margin-top: -50px;
+                        }
+                        .brand-responsive {
+                            width: 80%;
+                        }
+                        .pd1rem {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                        .pd15rem {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 478px) {
+                        .header {
+                            max-height: 50px;
+                        }
+                        .image-header {
+                            padding: 50px 0 !important;
+                        }
+                        .brand-responsive {
+                            width: 50%;
+                        }
+                        .header {
+                            padding: 0px 5px 10px 5px !important;
+                        }
+                        .image-header-item {
+                            object-fit: cover;
+                        }
+                        .image-header-block {
+                            margin-top: -50px;
+                        }
+                        .signature-block-item {
+                            display: flex !important;
+                            flex-direction: column !important;
+                        }
+                        .signature-item {
+                            margin: 0 auto;
+                        }
+                        .col-6 {
+                            max-width: 60% !important;
+                        }
+                        .signature-block-item {
+                            padding-left: 0 !important;
+                            padding-right: 0 !important;
+                        }
+                        .pd1rem {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                        .pd15rem {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                    }
